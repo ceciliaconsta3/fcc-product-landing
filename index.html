@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="shortcut icon" type="image/png" href="/AE2-2019.JPG"/>
+    <script src="https://use.fontawesome.com/cebafbb4f4.js"></script>
+    <!-- For CodePen requirement checking -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+    <header id="header">
+        <img id="header-img" src="images/ccd-transparent-logo-purple.png" alt="Cecilia Constantine Development"/>
+        <nav id="nav-bar">
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#video">Video</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
+        </nav>       
+    </header>
+    <main>
+        <section id="contact" class="contact-details">
+            <img src="images/ccd-transparent-logo-purple.png" alt="Cecilia logo"/>
+            <h1>Cecilia Constantine Development</h1>
+            <div class="contact-interaction">
+                <form id="form" class="contact-form" method="POST" action="https://www.freecodecamp.com/email-submit">
+                    <p>Quality bespoke web development and consulting. Schedule a consultation today.</p>
+                    <input id="email" type="email" name="email" placeholder="Enter your email..."/>
+                    <input id="submit" type="submit" name="submit" value="Get Started">
+                </form> 
+                <!--  Not the proper way to load in YouTube videos but keeping this implementation for FCC RWD testing specifications sake -->
+                <video id="video" controls="true"> 
+                    <!-- https://www.youtube.com/watch?v=XWw1a0JZ_HU 
+                    https://www.youtube.com/h_zxYHY-Qpo
+                -->
+                    <source src="https://www.youtube.com/watch?v=XWw1a0JZ_HU" type="video/mp4"/>
+                        Your browser does not support the video.
+                </video>  
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="row-align">
+                <img class="about-left column-align" src="images/image-computer.png" alt="Desktop monitor">
+                <div class="about-right column-align">
+                    <h2>Website Design</h2>
+                    <p>Clean, modern designs - optimized for performance, search engines, and converting users to customers</p>
+                    <h2>VPS Hosting</h2>
+                    <p>From savvy solopreneurs to small businesses, with 99% uptime, built for speed, advanced security, and free migrations. </p>
+                    <h2>Ecommerce</h2>
+                    <p>Integration of eCommerce platforms, payment gateways, custom product templates, and more.</p>
+                </div>
+            </div>
+            <div class="row-align">
+                <img class="about-left img-order column-align" src="images/image-devices.png" alt="Mobile devices">
+                <div class="about-left column-align">
+                    <h2>Website Audits</h2>
+                    <p>Looking to improve your page performance, Search Engine Optimization(SEO), accessibility, and general user experience? Request a free site audit today.</p>
+                    <h2>Analytics</h2>
+                    <p>Get insights into who is browsing your sit so that you can make smarter business decisions.</p>
+                    <h2>Content Management</h2>
+                    <p>Custom Wordpress theme development. Easily update content without knowing how to code using the Content Management System (CMS)</p>
+                </div>
+            </div>
+        </section>
+        <section id="pricing">
+            <h2>Our Pricing</h2>
+            <!-- <div class="pricing-toggle">
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round">Monthly</span>
+                </label>
+            </div> -->
+            <div  class="pricing">
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <h4>$375</h4>
+                    <h5>For any single service & individuals</h5>
+                    <ul>
+                        <li>Single Website Audit</li>
+                        <li>Single Page Website</li>
+                        <li>VPS Hosting</li>
+                        <li>Personalized Emails</li>
+                    </ul>
+                    <button>Learn More</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Premium: </h3>
+                    <h4>Contact <br/>Today!</h4>
+                    <h5>For small businesses and Ecommerce </h5>
+                    <ul>
+                        <li>Anything from Basic & Professional</li>
+                        <li>Customized Monthly Services</li>
+                        <li>Bespoke Website Solution</li>
+                        <li>Ecommerce Shop setup</li>
+                        <li>Search Engine Optimization</li>
+                        <li>Social Media Management</li>
+                        <li>30 Minute Consultations</li>
+                    </ul>
+                    <button>Learn More</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Professional</h3>
+                    <h4>$1500</h4>
+                    <h5>For solopreneurs</h5>
+                    <ul>
+                        <li>Everything in the Basic Package</li>
+                        <li>Easy to use CMS</li>
+                        <li>Up to 4 Page Site</li>
+                        <li>Monthly Analytics Report</li>
+                        <li>Regular Site Backups</li>
+                    </ul>
+                    <button>Learn More</button>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <ul class="footer-navlinks">
+                <li><a href="#top"><img src="images/ccd-transparent-logo-only.png" alt="Cecilia Constantine Development"/></a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>  
+        <ul class="footer-socials">
+            <li><a href="https://www.twitter.com/ceciliaconsta3"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.github.com/ceciliaconsta3"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ceciliaconsta3"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/ceciliaconsta3_"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
